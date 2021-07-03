@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.technotalks</groupId>
-    <artifactId>crafftablesaddles</artifactId>
-    <version>1.0-DEV</version>
+    <artifactId>craftablesaddles</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>CrafftableSaddles</name>
