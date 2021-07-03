@@ -1,0 +1,4 @@
+name: CrafftableSaddles
+version: ${project.version}
+main: me.technotalks.crafftablesaddles.Main
+authors: [ TechnoTalks ]
