@@ -3,7 +3,6 @@ package me.technotalks.crafftablesaddles;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -19,7 +18,7 @@ public final class Main extends JavaPlugin {
 
     private void loadRecipe() {
         ItemStack item = new ItemStack(Material.SADDLE);
-        ShapedRecipe recipe = new ShapedRecipe(NamespacedKey.minecraft("saddle"), item);
+        ShapedRecipe recipe = new ShapedRecipe(item);
         recipe.shape("LXL","LLL","LXL");
         recipe.setIngredient('L', Material.LEATHER);
         recipe.setIngredient('X', Material.STRING);
