@@ -19,9 +19,10 @@ public final class Main extends JavaPlugin {
     private void loadRecipe() {
         ItemStack item = new ItemStack(Material.SADDLE);
         ShapedRecipe recipe = new ShapedRecipe(item);
-        recipe.shape("LXL","LLL","LXL");
+        recipe.shape("LXL","ILI","LXL");
         recipe.setIngredient('L', Material.LEATHER);
         recipe.setIngredient('X', Material.STRING);
+        recipe.setIngredient('I', Material.IRON_INGOT);
         Bukkit.getServer().addRecipe(recipe);
     }
 
