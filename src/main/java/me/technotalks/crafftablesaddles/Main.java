@@ -10,13 +10,12 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
         UpdateChecker updateChecker = new UpdateChecker();
         try {
             if (updateChecker.getLatestVersion().equals(getDescription().getVersion())) {
-                getLogger().info(ChatColor.GOLD+"You are running the latest version of Craftable Saddles!");
+                getLogger().info("You are running the latest version of Craftable Saddles!");
             } else {
-                getLogger().info(ChatColor.RED+"You are running version "+getDescription().getVersion()+"! The latest version is "+updateChecker.getLatestVersion()+"! Please update!");
+                getLogger().info("You are running version "+getDescription().getVersion()+"! The latest version is "+updateChecker.getLatestVersion()+"! Please update!");
             }
         } catch (IOException e) {
             e.printStackTrace();
