@@ -23,10 +23,23 @@ public final class Main extends JavaPlugin {
         }
 
         if (Bukkit.getBukkitVersion().contains("1.8")) {
-            System.out.println("[CraftableSaddles] Loaded 1.8 mehthod! Please note that only 1.8 & 1.17 are supported, no other versions are at the current release!");
+            System.out.println("[CraftableSaddles] Loaded legacy method! (1.8)");
+            System.out.println("[CraftableSaddles] If the version in ()'s does not match your server version then this is a ERROR, Please contact Support!");
+            legacyRecipe.legacyloadRecipe();
+        }else if(Bukkit.getBukkitVersion().contains("1.9")){
+            System.out.println("[CraftableSaddles] Loaded legacy method! (1.9)");
+            System.out.println("[CraftableSaddles] If the version in ()'s does not match your server version then this is a ERROR, Please contact Support!");
+            legacyRecipe.legacyloadRecipe();
+        }else if(Bukkit.getBukkitVersion().contains("1.10")){
+            System.out.println("[CraftableSaddles] Loaded legacy method! (1.10)");
+            System.out.println("[CraftableSaddles] If the version in ()'s does not match your server version then this is a ERROR, Please contact Support!");
+            legacyRecipe.legacyloadRecipe();
+        }else if(Bukkit.getBukkitVersion().contains("1.11")){
+            System.out.println("[CraftableSaddles] Loaded legacy method! (1.11)");
+            System.out.println("[CraftableSaddles] If the version in ()'s does not match your server version then this is a ERROR, Please contact Support!");
             legacyRecipe.legacyloadRecipe();
         }else {
-            System.out.println("[CraftableSaddles] Loaded 1.17 method! Please note that only 1.8 & 1.17 are supported, no other versions are at the current release");
+            System.out.println("[CraftableSaddles] Loaded Updated method! If you are seeing this and you are not on version 1.12+ then this is a ERROR, Please contact Support!");
             Recipe.loadRecipe();
         }
 
@@ -38,6 +51,5 @@ public final class Main extends JavaPlugin {
     @Override
     public void onDisable() {
         System.out.println(ChatColor.GOLD+"Craftable Saddles has unloaded");
-        // Plugin shutdown logic
     }
 }
